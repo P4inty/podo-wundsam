@@ -17,9 +17,9 @@ env:
   IBM_CLOUD_REGION: eu-de
   ICR_NAMESPACE: ${{ secrets.ICR_NAMESPACE }}
   REGISTRY_HOSTNAME: de.icr.io
-  IMAGE_NAME: iks-test
+  IMAGE_NAME: podo-wundsam
   IKS_CLUSTER: example-iks-cluster-name-or-id
-  DEPLOYMENT_NAME: iks-test
+  DEPLOYMENT_NAME: podo-wundsam
   PORT: 5001
 
 jobs:
