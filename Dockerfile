@@ -12,7 +12,7 @@ WORKDIR /go/src/github.com/p4inty/podo-wundsam/assets
 
 RUN npm install && \
     npm run production && \
-    rm -rf ../assets
+    rm -rf ../assets && \
     rm -rf ../.gitignore
 
 
