@@ -1,0 +1,116 @@
+{{ define "content" }}
+    <div class="flex px-4 md:px-32 mt-20 text-gray-800">
+        <div class="lg:w-1/2">
+            {{ template "components/notification" }}
+            <h1 class="text-3xl font-semibold mt-8">Schmerzen und Deformationen an Ihren Füßen?</h1>
+            <div class="font-light text-gray-700 mt-4 text-justify leading-6">
+                <p class="mb-4">Eingewachsene oder deformierte Fußnägel, Hühneraugen, rissige Fersen oder Warzen – ein
+                    Übel, womit
+                    die Menschen schon vor tausenden von Jahren zu kämpfen hatten.</p>
+                <p class="mb-4">Die heutige medizinische Fußfpflege (Podologie) ist ein Hoffnungsschimmer für unsere
+                    zunehmend
+                    belasteten Füße. Sie ist auch für das ästhetische und gesunde Erscheinungsbild der Füße von großer
+                    Bedeutung.</p>
+                <p> Wir helfen Ihnen, diese und ähnliche Beschwerden zu überwinden, damit es für Sie wieder heisst: Gut
+                    zu Fuß unterwegs!</p>
+            </div>
+        </div>
+        <div class="hidden lg:block mx-auto">
+            <object type="image/svg+xml" data="/public/images/snake.svg">
+                Snake
+            </object>
+        </div>
+    </div>
+    <object type="image/svg+xml" data="/public/images/bubble.svg" class="absolute -z-10 left-0">
+        Bubble
+    </object>
+    <div class="flex px-4 md:px-32 mt-20 text-gray-800 text-center flex-col lg:flex-row lg:flex-no-wrap">
+        <a href="#international" class="btn-card">
+            <div class="w-24 h-24 mx-auto fill-current">{{ template "components/icons/globe" }}</div>
+            <p class="font-bold py-10">internationale Erfahrung</p>
+        </a>
+        <a href="/services" class="btn-card">
+            <div class="w-24 h-24 mx-auto fill-current">{{ template "components/icons/medical" }}</div>
+            <p class="font-bold py-10">wie wir unseren Patienten helfen</p>
+        </a>
+        <a href="/news" class="btn-card">
+            <div class="w-24 h-24 mx-auto fill-current">{{ template "components/icons/knowledge" }}</div>
+            <p class="font-bold py-10">wichtig zu wissen</p>
+        </a>
+        <a href="/contact" class="btn-card">
+            <div class="w-24 h-24 mx-auto fill-current">{{ template "components/icons/phone" }}</div>
+            <p class="font-bold py-10">sprechen Sie mit uns!</p>
+        </a>
+        <a href="/career" class="btn-card mr-0">
+            <div class="w-24 h-24 mx-auto fill-current">{{ template "components/icons/career" . }}</div>
+            <p class="font-bold py-10">Personalsuche</p>
+        </a>
+    </div>
+    <div class="flex px-4 md:px-32 flex-col md:flex-row mt-20 lg:mt-40">
+        <div class="md:w-3/5">
+            <h2 class="text-3xl font-semibold text-gray-800" id="international">Internationale Erfahrung</h2>
+            <p class="text-primary font-bold">Senay Mersin-Wundsam</p>
+            <div class="text-gray-700 font-light text-justify leading-6">
+                <p class="mt-4">Staatlich geprüfte Podologin,</p>
+                <p class="mt-4">Von der Grundschule über die Realschule Augsburg hin zum Internationalen Gymnasium in
+                    Izmir, dem ein
+                    Germanistikstudium mit Fachrichtung Erziehungspädagogik angeschlossen.</p>
+                <p class="mt-4">Erste Umsetzung des Gelernten als vereidigte Dolmetscherin für Gerichte und Notare und
+                    schließlich selbständige Übersetzerin für Buchverlage. Und hier trifft Frau Senay Mersin-Wundsam das
+                    erste Mal auf medizinische Fußpflege und Podologie und ist von Anfang an von diesem schonenden
+                    medizinischen Angang fasziniert.</p>
+                <p class="mt-4">Es folgen 12 Jahre als selbständige Unternehmerin für medizinische Fußpflege-Produkte
+                    und Podologie inklusive vielzähliger Teilnahme an internationalen Messen und Konferenzen zum Thema
+                    Podologie. Das bisher pragmatisch gelernte Wissen festigt Frau Senay Mersin-Wundsam nun während
+                    ihrer Ausbildung zur Podologin mit staatlichem Examen in Dortmund, bestätigt durch das dortige
+                    Gesundheitsamt.</p>
+                <p class="mt-4">Darauf aufbauend schafft sie nunmehr ein effektives Ausbildungswesen zur Podologie in
+                    der Türkei und bildet selber entsprechend aus.</p>
+                <p class="mt-4">Noch immer nicht genug, folgt sie dem Berufung zur Dozentin an einer Istanbuler
+                    Medizinischen Hochschule für Podologie und baut zeitgleich fünf Podologiepraxen in einer führenden
+                    privaten Krankenhaus-Kette in der Türkei auf, die sie anschließend leitet.</p>
+                <p class="mt-4">Ihre Energie, und bewiesenes Fachwissen setzt Frau Senay Mersin-Wundsam in ihrer schon
+                    am Markt etablierten Fachpraxis für Podologie in Dachau ab dem 1. Oktober 2019 ein.</p>
+            </div>
+        </div>
+        <div class="w-1/2 mx-auto mb-8 md:mb-0 md:w-2/5 md:pl-20 pt-20 order-first md:order-none">
+            <img src="/public/images/senay_point.png" alt="senay zeigt ins bild">
+        </div>
+    </div>
+    <div class="hidden md:flex px-32 mt-20">
+        <img src="/public/images/index_fair.jpg" alt="senay auf einer messe" class="w-1/6 pr-4">
+        <img src="/public/images/index_tv.jpg" alt="senay im tv" class="w-1/6 pr-4">
+        <img src="/public/images/index_tv_2.jpg" alt="senay im tv" class="w-1/6 pr-4">
+        <img src="/public/images/index_presentation.jpg" alt="senay bei vortrag in rom" class="w-1/6 pr-4">
+        <img src="/public/images/index_presentation_2.jpg" alt="senay bei vortrag" class="w-1/6 pr-4">
+        <img src="/public/images/index_congress.jpg" alt="senay bei einem kongress" class="w-1/6">
+    </div>
+    <div class="bg-gradient-to-r from-primary via-primary to-danger px-4 md:px-32 py-20 mt-20">
+        <p class="text-white text-2xl font-bold">Wir freuen uns auf Sie!</p>
+        <div class="flex flex-col md:flex-row mt-4">
+            <img src="/public/images/foot_aid.jpg" alt="behandlung eines fußes" class="pt-4 md:pt-0 md:w-1/3 md:pr-2">
+            <img src="/public/images/index_reception.jpg" alt="empfang der praxis"
+                 class="pt-4 md:pt-0 md:w-1/3 md:px-2">
+            <img src="/public/images/index_treatment.jpg" alt="behandlungsraum der praxis"
+                 class="pt-4 md:pt-0 md:w-1/3 md:pl-2">
+        </div>
+    </div>
+    <div class="px-4 md:px-32 mt-20">
+        <h2 class="text-3xl font-semibold text-gray-800">Was ist eigentlich Podologie?</h2>
+        <div class="text-gray-700 font-light text-justify leading-6">
+            <p class="mt-8">Podologie ist die "nichtärztliche Heilkunde am Fuß".</p>
+            <p class="mt-4">Ein Podologe übt einen medizinischen Fachberuf aus, Voraussetzung ist eine fundierte
+                podologische Ausbildung. Im Gegensatz zur Fußpflege geht es in der Podologie primaer um die Gesundheit
+                der Füße. Neben den rein vorbeugenden und pflegerischen Maßnahmen verantwortet der Podologe eine Reihe
+                von speziellen Behandlungspraktiken und Methoden.</p>
+            <p class="mt-4">Besonders Risikopatienten, wie Diabetiker, Rheumatiker und Menschen mit Gefäßerkrankungen,
+                profitieren von den fundierten Kenntnissen des Podologen.</p>
+            <p class="mt-4">Die Berufsbezeichnung "Podologe" ist geschützt und bedarf einer behördlichen
+                Erlaubnisurkunde zur Führung der Berufsbezeichnung.</p>
+            <p class="mt-4">Treten bei Patienten krankhafte Veränderungen am Fuß auf, entscheidet ein Podologe gemeinsam
+                mit Ärzten, Orthopädieschuhmachern und Physiotherapeuten, welche Behandlung sinnvoll ist. Ein häufiges
+                Beispiel ist die notwendige podologische Behandlung von Diabetes-Patienten.</p>
+            <p class="mt-4">Die Arbeit des Podologen ist präventiv, lindernd und heilend.</p>
+        </div>
+    </div>
+{{ end }}

@@ -1,0 +1,26 @@
+{{ define "layouts/nav" }}
+    <object type="image/svg+xml" data="/public/images/cloud.svg"
+            class="w-full pl-16 lg:w-8/12 absolute -z-10 top-0 right-0">
+        Background
+    </object>
+    <nav x-data="{ open: false }" class="flex flex-col md:flex-row w-full md:items-center justify-between lg:px-32">
+        <a href="/" class="flex items-center">
+            <div class="w-24 p-4">
+                {{ template "components/icons/logo" }}
+            </div>
+            <span class="text-xl pl-4 lg:text-2xl text-white lg:text-primary font-bold">Podologie Wundsam</span>
+        </a>
+        <div :class="{ 'hidden': open === false }"
+             class="items-center text-xl text-white font-bold flex flex-col bg-primary hidden md:flex md:bg-transparent md:flex-row w-full md:w-auto">
+            <a href="/" class="btn-nav">Home</a>
+            <a href="/services" class="btn-nav">Leistungen</a>
+            <a href="/news" class="btn-nav">Neuigkeiten</a>
+            <a href="/career" class="btn-nav">Karriere</a>
+            <a href="/contact" class="btn-nav">Kontakt</a>
+        </div>
+        <div @click="open = !open"
+             class="w-16 p-4 absolute mt-5 text-gray-700 hover:text-primary right-0 md:hidden">
+            {{ template "components/icons/burger" }}
+        </div>
+    </nav>
+{{ end }}
