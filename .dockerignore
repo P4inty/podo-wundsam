@@ -1,2 +1,4 @@
 **/node_modules
 .git
+nginx.conf
+docker-compose.yml
