@@ -2,3 +2,4 @@
 /assets/node_modules/
 .idea
 /public/style.css
+*.DS_Store
