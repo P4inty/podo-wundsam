@@ -1,7 +1,7 @@
 version: '3'
 services:
   website:
-    image: 172a892e739a
+    image: de.icr.io/dev_cube_com/podo-wundsam:latest
     ports:
       - "8080:8080"
     restart: "always"
