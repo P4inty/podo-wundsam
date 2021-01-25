@@ -1,5 +1,5 @@
 {{ define "content" }}
-    <div class="flex px-4 md:px-32 mt-20 text-gray-800">
+    <div class="flex px-4 md:px-32 mt-20 text-gray-800 flex-col md:flex-row">
         <div class="lg:w-1/2">
             {{ template "components/notification" }}
             <h1 class="text-3xl font-semibold mt-8">Schmerzen und Deformationen an Ihren Füßen?</h1>
@@ -15,10 +15,19 @@
                     zu Fuß unterwegs!</p>
             </div>
         </div>
-        <div class="hidden lg:block mx-auto">
-            <object type="image/svg+xml" data="/public/images/snake.svg">
-                Snake
-            </object>
+        <div class="flex justify-around">
+            <div class="hidden lg:block lg:w-2/4">
+                <object type="image/svg+xml" data="/public/images/snake.svg" class="mx-auto">
+                    Snake
+                </object>
+            </div>
+            <div class="ml-8 lg:ml-0 lg:w-1/4">
+                <picture>
+                    <source type="image/webp" srcset="/public/images/index_approval.webp">
+                    <source type="image/png" srcset="images/index_approval.png">
+                    <img src="/public/images/index_congress.png" alt="zulassung für alle Krankenkassen - Emblem">
+                </picture>
+            </div>
         </div>
     </div>
     <object type="image/svg+xml" data="/public/images/bubble.svg" class="absolute -z-10 left-0">
