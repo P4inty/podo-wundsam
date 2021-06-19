@@ -20,7 +20,15 @@ func routes(r *gin.Engine) {
 		})
 	})
 	r.GET("/career", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "career.tmpl", gin.H{
+			"title": "Karierre | ",
+		})
+	})
+	r.GET("/career/podologe", func(c *gin.Context) {
 		c.File("public/files/Stellenanzeige_Podologie_Wundsam.pdf")
+	})
+	r.GET("/career/buero", func(c *gin.Context) {
+		c.File("public/files/Stellenanzeige_Podologie_Wundsam_Buero.pdf")
 	})
 	r.GET("/contact", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "contact.tmpl", gin.H{
