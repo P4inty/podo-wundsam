@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 func routes(r *gin.Engine) {
@@ -49,5 +50,11 @@ func routes(r *gin.Engine) {
 		c.HTML(http.StatusOK, "licence.tmpl", gin.H{
 			"title": "Lizenzen | ",
 		})
+	})
+	r.GET("/sitemap.xml", func(c *gin.Context) {
+		c.File("public/files/sitemap.xml")
+	})
+	r.NoRoute(func(c *gin.Context) {
+		c.JSON(404, gin.H{"code": "PAGE_NOT_FOUND", "message": "Page not found"})
 	})
 }
