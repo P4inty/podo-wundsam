@@ -1,0 +1,10 @@
+{{ define "components/cookie" }}
+<div x-data="showCookieDisclaimer()" x-init="getCookie()" class="sticky bottom-0 bg-primary py-8 px-4 md:px-32 text-white" x-show="show">
+    <p class="font-bold">Diese Seite verwendet Cookies</p>
+    <p>Sie können entscheiden welche Cookies genutzt werden. Sollen nur notwendige Cookies für die reibunglose Funktionalität genutzt werden oder dürfen auch andere gesetzt werden?</p>
+    <div class="mt-4 md:mt-2 font-bold text-center md:text-right">
+        <span @click="setCookie(false)" class="border-2 py-2 px-1 rounded bg-white border-white text-primary hover:bg-transparent hover:text-white transition duration-500 cursor-pointer">Nur notwendige akzeptieren</span>
+        <span @click="setCookie(true)" class="border-2 py-2 px-1 rounded border-white hover:bg-white hover:text-primary transition duration-500 cursor-pointer">Alle akzeptieren</span>
+    </div>
+</div>
+{{ end }}
