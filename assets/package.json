@@ -7,14 +7,13 @@
     "autoprefixer": "^10.3.3",
     "postcss": "^8.3.6",
     "postcss-import": "^14.0.2",
-    "tailwindcss": "^2.2.8"
+    "tailwindcss": "^2.2.9"
   },
   "devDependencies": {
     "concurrently": "^6.2.1",
     "copyfiles": "^2.4.1",
     "cross-env": "^7.0.3",
     "cssnano": "^5.0.8",
-    "live-server": "^1.2.1",
     "postcss-cli": "^8.3.1"
   }
 }
