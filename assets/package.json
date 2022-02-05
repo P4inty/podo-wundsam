@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "development": "node_modules/.bin/cross-env NODE_ENV=development postcss css/style.css -o ../public/style.css",
-    "production": "node_modules/.bin/cross-env NODE_ENV=production postcss css/style.css -o ../public/style.css"
+    "development": "node_modules/.bin/cross-env NODE_ENV=development postcss css/style.css -o ../public/style.css && copyfiles -f js/script.js ../public/",
+    "production": "node_modules/.bin/cross-env NODE_ENV=production postcss css/style.css -o ../public/style.css && copyfiles -f js/script.js ../public/"
   },
   "dependencies": {
     "autoprefixer": "^10.3.3",
@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "concurrently": "^6.2.1",
+    "copyfiles": "^2.4.1",
     "cross-env": "^7.0.3",
     "cssnano": "^5.0.8",
     "postcss-cli": "^8.3.1"
