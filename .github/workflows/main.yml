@@ -8,7 +8,7 @@
 
 name: Build and Deploy to IKS
 
-on: [push, workflow_run]
+on: [push]
 
 # Environment variables available to all jobs and steps in this workflow
 env:
